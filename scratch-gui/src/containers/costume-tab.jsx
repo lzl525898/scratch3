@@ -31,7 +31,6 @@ class CostumeTab extends React.Component {
             sprites,
             stage
         } = nextProps;
-
         const target = editingTarget && sprites[editingTarget] ? sprites[editingTarget] : stage;
         if (target && target.costumes && this.state.selectedCostumeIndex > target.costumes.length - 1) {
             this.setState({selectedCostumeIndex: target.costumes.length - 1});
@@ -82,7 +81,7 @@ class CostumeTab extends React.Component {
             />
         );
 
-        const addMessage = target.isStage ? addBackdropMsg : addCostumeMsg;
+        const addMessage = target.isStage ? '添加背景'/*addBackdropMsg*/ : '添加造型'/*addCostumeMsg*/;
         const addFunc = target.isStage ? onNewBackdropClick : onNewCostumeClick;
 
         return (

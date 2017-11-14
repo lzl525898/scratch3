@@ -27,8 +27,8 @@ const RecordingStep = props => (
                     />
                 ) : (
                     <span className={styles.helpText}>
-                        {props.listening ? 'Begin recording by clicking the button below' :
-                            '↖️ \u00A0We need your permission to use your microphone'}
+                        {props.listening ? '单击下面的按钮开始录制' :
+                            '↖️ \u00A0我们需要你允许使用你的麦克风'}
                     </span>
                 )}
             </Box>
@@ -63,7 +63,7 @@ const RecordingStep = props => (
                 )}
                 <div className={styles.helpText}>
                     <span className={styles.recordingText}>
-                        {props.recording ? 'Stop recording' : 'Record'}
+                        {props.recording ? '停止' : '录制'}
                     </span>
                 </div>
             </button>

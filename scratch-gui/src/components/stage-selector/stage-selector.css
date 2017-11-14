@@ -5,6 +5,8 @@ $header-height: calc($stage-menu-height - 2px);
 
 .stage-selector {
     display: flex;
+    margin-left: -0.40rem;
+    margin-right: 0.90rem;
     flex-direction: column;
     align-items: center;
     position: relative; /* For the add backdrop button */
@@ -73,7 +75,7 @@ $header-height: calc($stage-menu-height - 2px);
 
 .costume-canvas {
     display: block;
-    width: 100%;
+    width: 96%;
     user-select: none;
     border-bottom: 1px solid #eaeaea;
 }
@@ -85,4 +87,5 @@ $header-height: calc($stage-menu-height - 2px);
     position: absolute;
     bottom: 0.75rem;
     left: 0.25rem;
+    margin-left:0.35rem;
 }

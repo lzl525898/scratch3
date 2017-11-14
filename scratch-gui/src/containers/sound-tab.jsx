@@ -90,11 +90,11 @@ class SoundTab extends React.Component {
         return (
             <AssetPanel
                 buttons={[{
-                    message: recordSoundMsg,
+                    message: '记录声音'/*recordSoundMsg*/,
                     img: addSoundFromRecordingIcon,
                     onClick: onNewSoundFromRecordingClick
                 }, {
-                    message: addSoundMsg,
+                    message: '添加声音'/*addSoundMsg*/,
                     img: addSoundFromLibraryIcon,
                     onClick: onNewSoundFromLibraryClick
                 }]}

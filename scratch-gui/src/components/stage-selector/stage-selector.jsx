@@ -35,7 +35,7 @@ const StageSelector = props => {
             {...componentProps}
         >
             <div className={styles.header}>
-                <div className={styles.headerTitle}>Stage</div>
+                <div className={styles.headerTitle}>舞台</div>
             </div>
             {url ? (
                 <CostumeCanvas
@@ -46,17 +46,18 @@ const StageSelector = props => {
                 />
             ) : null}
             <div className={styles.label}>
-                <FormattedMessage
-                    defaultMessage="Backdrops"
+               <div>背景</div>
+                {/*<FormattedMessage
+                    defaultMessage="背景"
                     description="Label for the backdrops in the stage selector"
                     id="gui.stageSelector.backdrops"
-                />
+                />*/}
             </div>
             <div className={styles.count}>{backdropCount}</div>
             <IconButton
                 className={styles.addButton}
                 img={backdropIcon}
-                title={addBackdropMessage}
+                title='添加背景'/*{addBackdropMessage}*/
                 onClick={onNewBackdropClick}
             />
         </Box>

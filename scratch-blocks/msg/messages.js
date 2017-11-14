@@ -126,9 +126,9 @@ Blockly.Msg.RENAME_VARIABLE_TITLE = 'Rename all "%1" variables to:';
 
 // Variable creation
 /// button text - Text on the button used to launch the variable creation dialogue.
-Blockly.Msg.NEW_VARIABLE = 'Create variable...';
+Blockly.Msg.NEW_VARIABLE = '创建变量...';
 /// prompt - Prompts the user to enter the name for a new variable.  See [https://github.com/google/blockly/wiki/Variables#dropdown-menu https://github.com/google/blockly/wiki/Variables#dropdown-menu].
-Blockly.Msg.NEW_VARIABLE_TITLE = 'New variable name:';
+Blockly.Msg.NEW_VARIABLE_TITLE = '新变量名:';
 /// alert - Tells the user that the name they entered is already in use.
 Blockly.Msg.VARIABLE_ALREADY_EXISTS = 'A variable named "%1" already exists.';
 /// alert - Tells the user that the name they entered is already in use for another type.
@@ -138,7 +138,7 @@ Blockly.Msg.PROCEDURE_ALREADY_EXISTS = 'A procedure named "%1" already exists.';
 
 // List creation
 /// button text - Text on the button used to launch the list creation dialogue.
-Blockly.Msg.NEW_LIST = 'Create list...';
+Blockly.Msg.NEW_LIST = '创建链表...';
 
 // Variable deletion.
 /// confirm -  Ask the user to confirm their deletion of multiple uses of a variable.

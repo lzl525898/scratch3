@@ -87,7 +87,7 @@ const SpriteSelectorComponent = function (props) {
             <IconButton
                 className={styles.addButton}
                 img={spriteIcon}
-                title={addSpriteMessage}
+                title='添加角色' /*{addSpriteMessage}*/
                 onClick={onNewSpriteClick}
             />
         </Box>

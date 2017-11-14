@@ -236,7 +236,7 @@ class Blocks extends React.Component {
                     <Prompt
                         label={this.state.prompt.message}
                         placeholder={this.state.prompt.defaultValue}
-                        title="New Variable" // @todo the only prompt is for new variables
+                        title="创建变量" // @todo the only prompt is for new variables
                         onCancel={this.handlePromptClose}
                         onOk={this.handlePromptCallback}
                     />

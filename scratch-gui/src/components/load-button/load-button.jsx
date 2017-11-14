@@ -31,6 +31,6 @@ LoadButtonComponent.propTypes = {
     title: PropTypes.string
 };
 LoadButtonComponent.defaultProps = {
-    title: 'Load'
+    title: '打开'
 };
 export default LoadButtonComponent;

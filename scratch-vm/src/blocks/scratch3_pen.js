@@ -241,31 +241,33 @@ class Scratch3PenBlocks {
     getInfo () {
         return {
             id: 'pen',
-            name: 'Pen',
+            name: '画笔',
             iconURI: iconURI,
             blocks: [
                 {
                     opcode: 'clear',
-                    blockType: BlockType.COMMAND
+                    blockType: BlockType.COMMAND,
+                    text: '清空'
                 },
                 {
                     opcode: 'stamp',
-                    blockType: BlockType.COMMAND
+                    blockType: BlockType.COMMAND,
+                    text: '图章'
                 },
                 {
                     opcode: 'penDown',
                     blockType: BlockType.COMMAND,
-                    text: 'pen down'
+                    text: '落笔'
                 },
                 {
                     opcode: 'penUp',
                     blockType: BlockType.COMMAND,
-                    text: 'pen up'
+                    text: '抬笔'
                 },
                 {
                     opcode: 'setPenColorToColor',
                     blockType: BlockType.COMMAND,
-                    text: 'set pen color to [COLOR]',
+                    text: '将画笔颜色设定为 [COLOR]',
                     arguments: {
                         COLOR: {
                             type: ArgumentType.COLOR
@@ -275,7 +277,7 @@ class Scratch3PenBlocks {
                 {
                     opcode: 'changePenColorParamBy',
                     blockType: BlockType.COMMAND,
-                    text: 'change pen [COLOR_PARAM] by [VALUE]',
+                    text: '将画笔 [COLOR_PARAM] 增加 [VALUE]',
                     arguments: {
                         COLOR_PARAM: {
                             type: ArgumentType.STRING,
@@ -291,7 +293,7 @@ class Scratch3PenBlocks {
                 {
                     opcode: 'setPenColorParamTo',
                     blockType: BlockType.COMMAND,
-                    text: 'set pen [COLOR_PARAM] to [VALUE]',
+                    text: '将画笔 [COLOR_PARAM] 设定 [VALUE]',
                     arguments: {
                         COLOR_PARAM: {
                             type: ArgumentType.STRING,
@@ -307,7 +309,7 @@ class Scratch3PenBlocks {
                 {
                     opcode: 'changePenSizeBy',
                     blockType: BlockType.COMMAND,
-                    text: 'change pen size by [SIZE]',
+                    text: '将画笔的大小增加 [SIZE]',
                     arguments: {
                         SIZE: {
                             type: ArgumentType.NUMBER,
@@ -318,7 +320,7 @@ class Scratch3PenBlocks {
                 {
                     opcode: 'setPenSizeTo',
                     blockType: BlockType.COMMAND,
-                    text: 'set pen size to [SIZE]',
+                    text: '将画笔的大小设定为 [SIZE]',
                     arguments: {
                         SIZE: {
                             type: ArgumentType.NUMBER,
@@ -330,7 +332,7 @@ class Scratch3PenBlocks {
                 {
                     opcode: 'setPenShadeToNumber',
                     blockType: BlockType.COMMAND,
-                    text: 'set pen shade to [SHADE]',
+                    text: '设置画笔的阴影 [SHADE]',
                     arguments: {
                         SHADE: {
                             type: ArgumentType.NUMBER,
@@ -342,7 +344,7 @@ class Scratch3PenBlocks {
                 {
                     opcode: 'changePenShadeBy',
                     blockType: BlockType.COMMAND,
-                    text: 'change pen shade by [SHADE]',
+                    text: '增加画笔的阴影 [SHADE]',
                     arguments: {
                         SHADE: {
                             type: ArgumentType.NUMBER,
@@ -354,7 +356,7 @@ class Scratch3PenBlocks {
                 {
                     opcode: 'setPenHueToNumber',
                     blockType: BlockType.COMMAND,
-                    text: 'set pen hue to [HUE]',
+                    text: '设置画笔的色调 [HUE]',
                     arguments: {
                         HUE: {
                             type: ArgumentType.NUMBER,
@@ -366,7 +368,7 @@ class Scratch3PenBlocks {
                 {
                     opcode: 'changePenHueBy',
                     blockType: BlockType.COMMAND,
-                    text: 'change pen hue by [HUE]',
+                    text: '增加画笔的色调 [HUE]',
                     arguments: {
                         HUE: {
                             type: ArgumentType.NUMBER,

@@ -32,7 +32,7 @@ class RecordingStep extends React.Component {
         this.setState({listening: true});
     }
     handleRecordingError () {
-        alert('Could not start recording'); // eslint-disable-line no-alert
+        alert('无法开始录制，请检查麦克风'); // eslint-disable-line no-alert
     }
     handleLevelUpdate (level) {
         this.setState({level});

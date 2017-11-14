@@ -24,8 +24,8 @@ import addExtensionIcon from './icon--extensions.svg';
 
 const addExtensionMessage = (
     <FormattedMessage
-        defaultMessage="Extensions"
-        description="Button to add an extension in the target pane"
+        defaultMessage="扩展"
+        description="按钮在目标窗格中添加一个扩展"
         id="gui.gui.addExtension"
     />
 );
@@ -75,9 +75,9 @@ const GUIComponent = props => {
                             onSelect={onTabSelect}
                         >
                             <TabList className={tabClassNames.tabList}>
-                                <Tab className={tabClassNames.tab}>Blocks</Tab>
-                                <Tab className={tabClassNames.tab}>Costumes</Tab>
-                                <Tab className={tabClassNames.tab}>Sounds</Tab>
+                                <Tab className={tabClassNames.tab}>脚本</Tab>
+                                <Tab className={tabClassNames.tab}>造型</Tab>
+                                <Tab className={tabClassNames.tab}>声音</Tab>
                             </TabList>
                             <TabPanel className={tabClassNames.tabPanel}>
                                 <Box className={styles.blocksWrapper}>
@@ -96,7 +96,7 @@ const GUIComponent = props => {
                                             [styles.hidden]: !enableExtensions
                                         })}
                                         img={addExtensionIcon}
-                                        title={addExtensionMessage}
+                                        title="扩展" /*{addExtensionMessage}*/
                                         onClick={onExtensionButtonClick}
                                     />
                                 </Box>

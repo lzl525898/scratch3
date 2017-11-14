@@ -29,13 +29,13 @@ const PromptComponent = props => (
                     className={styles.cancelButton}
                     onClick={props.onCancel}
                 >
-                    Cancel
+                    取消
                 </button>
                 <button
                     className={styles.okButton}
                     onClick={props.onOk}
                 >
-                    OK
+                    确定
                 </button>
             </Box>
         </Box>

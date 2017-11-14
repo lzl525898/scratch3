@@ -10,6 +10,7 @@ import styles from './menu-bar.css';
 import scratchLogo from './scratch-logo.svg';
 
 const MenuBar = function MenuBar () {
+    var hideLanguageSelector = false;
     return (
         <Box
             className={classNames({
@@ -24,7 +25,13 @@ const MenuBar = function MenuBar () {
             </div>
             <SaveButton className={styles.menuItem} />
             <LoadButton className={styles.menuItem} />
-            <LanguageSelector className={styles.menuItem} />
+            {
+              true==hideLanguageSelector
+              ?
+              <LanguageSelector className={styles.menuItem} />
+              :
+              <div></div>
+            }
         </Box>
     );
 };

@@ -108,7 +108,7 @@ const SoundEditor = props => (
                 {props.playhead ? (
                     <button
                         className={classNames(styles.button, styles.stopButtonn)}
-                        title={props.intl.formatMessage(messages.stop)}
+                        title={'停止'/*props.intl.formatMessage(messages.stop)*/}
                         onClick={props.onStop}
                     >
                         <img src={stopIcon} />
@@ -116,7 +116,7 @@ const SoundEditor = props => (
                 ) : (
                     <button
                         className={classNames(styles.button, styles.playButton)}
-                        title={props.intl.formatMessage(messages.play)}
+                        title={'播放'/*props.intl.formatMessage(messages.play)*/}
                         onClick={props.onPlay}
                     >
                         <img src={playIcon} />
@@ -124,7 +124,7 @@ const SoundEditor = props => (
                 )}
             </div>
             <div className={styles.inputGroup}>
-                <Label text={props.intl.formatMessage(messages.sound)}>
+                <Label text={'声音'/*props.intl.formatMessage(messages.sound)*/}>
                     <BufferedInput
                         tabIndex="1"
                         type="text"
@@ -139,24 +139,24 @@ const SoundEditor = props => (
                         [styles.trimButtonActive]: props.trimStart !== null
                     })}
                     title={props.trimStart === null ? (
-                        props.intl.formatMessage(messages.trim)
+                        '剪裁'/*props.intl.formatMessage(messages.trim)*/
                     ) : (
-                        props.intl.formatMessage(messages.save)
+                        '保存'/*props.intl.formatMessage(messages.save)*/
                     )}
                     onClick={props.onActivateTrim}
                 >
                     <img src={trimIcon} />
                     {props.trimStart === null ? (
-                        <FormattedMessage {...messages.trim} />
+                        '剪裁'/*<FormattedMessage {...messages.trim} />*/
                     ) : (
-                        <FormattedMessage {...messages.save} />
+                        '保存'/*<FormattedMessage {...messages.save} />*/
                     )}
                 </button>
                 <div className={styles.buttonGroup}>
                     <button
                         className={styles.button}
                         disabled={!props.canUndo}
-                        title={props.intl.formatMessage(messages.undo)}
+                        title={'撤销'/*props.intl.formatMessage(messages.undo)*/}
                         onClick={props.onUndo}
                     >
                         <img src={undoIcon} />
@@ -164,7 +164,7 @@ const SoundEditor = props => (
                     <button
                         className={styles.button}
                         disabled={!props.canRedo}
-                        title={props.intl.formatMessage(messages.redo)}
+                        title={'重做'/*props.intl.formatMessage(messages.redo)*/}
                         onClick={props.onRedo}
                     >
                         <img src={redoIcon} />
@@ -192,43 +192,43 @@ const SoundEditor = props => (
             <IconButton
                 className={styles.effectButton}
                 img={higherIcon}
-                title={<FormattedMessage {...messages.faster} />}
+                title={'加快'/*<FormattedMessage {...messages.faster} />*/}
                 onClick={props.onFaster}
             />
             <IconButton
                 className={styles.effectButton}
                 img={lowerIcon}
-                title={<FormattedMessage {...messages.slower} />}
+                title={'减速'/*<FormattedMessage {...messages.slower} />*/}
                 onClick={props.onSlower}
             />
             <IconButton
                 className={styles.effectButton}
                 img={echoIcon}
-                title={<FormattedMessage {...messages.echo} />}
+                title={'回声'/*<FormattedMessage {...messages.echo} />*/}
                 onClick={props.onEcho}
             />
             <IconButton
                 className={styles.effectButton}
                 img={robotIcon}
-                title={<FormattedMessage {...messages.robot} />}
+                title={'机器'/*<FormattedMessage {...messages.robot} />*/}
                 onClick={props.onRobot}
             />
             <IconButton
                 className={styles.effectButton}
                 img={louderIcon}
-                title={<FormattedMessage {...messages.louder} />}
+                title={'响亮'/*<FormattedMessage {...messages.louder} />*/}
                 onClick={props.onLouder}
             />
             <IconButton
                 className={styles.effectButton}
                 img={softerIcon}
-                title={<FormattedMessage {...messages.softer} />}
+                title={'柔和'/*<FormattedMessage {...messages.softer} />*/}
                 onClick={props.onSofter}
             />
             <IconButton
                 className={styles.effectButton}
                 img={reverseIcon}
-                title={<FormattedMessage {...messages.reverse} />}
+                title={'反转'/*<FormattedMessage {...messages.reverse} />*/}
                 onClick={props.onReverse}
             />
         </div>

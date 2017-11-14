@@ -38,7 +38,7 @@ class SpriteInfo extends React.Component {
             >
                 <div className={classNames(styles.row, styles.rowPrimary)}>
                     <div className={styles.group}>
-                        <Label text="Sprite">
+                        <Label text="角色">
                             <BufferedInput
                                 disabled={this.props.disabled}
                                 placeholder="Name"
@@ -100,7 +100,7 @@ class SpriteInfo extends React.Component {
                         <MediaQuery minWidth={layout.fullSizeMinWidth}>
                             <Label
                                 secondary
-                                text="Show"
+                                text="显示"
                             />
                         </MediaQuery>
                         <div>
@@ -145,7 +145,7 @@ class SpriteInfo extends React.Component {
                     <div className={styles.group}>
                         <Label
                             secondary
-                            text="Direction"
+                            text="方向"
                         >
                             <BufferedInput
                                 small
@@ -161,7 +161,7 @@ class SpriteInfo extends React.Component {
                     <div className={styles.group}>
                         <Label
                             secondary
-                            text="Rotation"
+                            text="旋转"
                         >
                             <select
                                 className={classNames(styles.selectForm, styles.rotationSelect)}
@@ -174,8 +174,8 @@ class SpriteInfo extends React.Component {
                                         key={style}
                                         value={style}
                                     >
-                                        {style}
-                                    </option>
+                                        {style=='left-right' ? '左右翻转' : (style=='all around' ? '任意翻转' : '不翻转')}
+                                    </option>  /*['左右翻转', '不翻转', '任意翻转']; left-right', 'don\'t rotate', 'all around*/
                                 ))}
                             </select>
                         </Label>

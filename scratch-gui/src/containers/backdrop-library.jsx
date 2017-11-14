@@ -28,7 +28,7 @@ class BackdropLibrary extends React.Component {
         return (
             <LibraryComponent
                 data={backdropLibraryContent}
-                title="Backdrop Library"
+                title="背景库"
                 onItemSelected={this.handleItemSelect}
                 onRequestClose={this.props.onRequestClose}
             />

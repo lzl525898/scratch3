@@ -3,17 +3,17 @@ import wedoImage from './wedo.png';
 
 export default [
     {
-        name: 'Pen',
+        name: '画笔',
         extensionURL: 'pen',
         iconURL: penImage,
-        description: 'Draw with your sprites.',
+        description: '绘制你的角色.',
         featured: true
     },
     {
-        name: 'Lego WeDo 2.0',
+        name: '乐高 WeDo 2.0',
         extensionURL: 'wedo2',
         iconURL: wedoImage,
-        description: 'Build with motors and sensors.',
+        description: '内置发动机和传感器.',
         featured: true
     }
 ];

@@ -83,7 +83,7 @@ module.exports = {
         new HtmlWebpackPlugin({
             chunks: ['lib', 'gui'],
             template: 'src/index.ejs',
-            title: 'Scratch 3.0 GUI'
+            title: '橙小乐'
         }),
         new HtmlWebpackPlugin({
             chunks: ['lib', 'blocksonly'],

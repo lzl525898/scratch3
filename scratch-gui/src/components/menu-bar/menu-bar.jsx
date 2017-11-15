@@ -7,7 +7,8 @@ import SaveButton from '../../containers/save-button.jsx';
 import LanguageSelector from '../../containers/language-selector.jsx';
 
 import styles from './menu-bar.css';
-import scratchLogo from './scratch-logo.svg';
+//import scratchLogo from './scratch-logo.svg';
+import scratchLogo from './logo.png';
 
 const MenuBar = function MenuBar () {
     var hideLanguageSelector = false;

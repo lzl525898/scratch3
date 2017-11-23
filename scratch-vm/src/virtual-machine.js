@@ -204,7 +204,6 @@ class VirtualMachine extends EventEmitter {
     fromJSON (json) {
         // Clear the current runtime
         this.clear();
-
         // Validate & parse
         if (typeof json !== 'string') {
             log.error('Failed to parse project. Non-string supplied to fromJSON.');
@@ -223,11 +222,12 @@ class VirtualMachine extends EventEmitter {
         //       methodology that should be adapted for use here
         let deserializer;
         if ((typeof json.meta !== 'undefined') && (typeof json.meta.semver !== 'undefined')) {
+            console.log('sb3');
             deserializer = sb3;
         } else {
+            console.log('sb2');
             deserializer = sb2;
         }
-
         return deserializer.deserialize(json, this.runtime)
             .then(({targets, extensions}) =>
                 this.installTargets(targets, extensions, true));
@@ -248,14 +248,13 @@ class VirtualMachine extends EventEmitter {
                 extensionPromises.push(this.extensionManager.loadExtensionURL(extensionURL));
             }
         });
-
         targets = targets.filter(target => !!target);
-
         return Promise.all(extensionPromises).then(() => {
             if (wholeProject) {
                 this.clear();
             }
             targets.forEach(target => {
+                console.log('virtual-machine : installTargets');
                 this.runtime.targets.push(target);
                 (/** @type RenderedTarget */ target).updateAllDrawableProperties();
             });

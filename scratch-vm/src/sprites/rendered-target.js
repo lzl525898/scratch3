@@ -881,6 +881,7 @@ class RenderedTarget extends Target {
      */
     toJSON () {
         const costumes = this.getCostumes();
+        console.log('rendered-target : toJSON');
         return {
             id: this.id,
             name: this.getName(),

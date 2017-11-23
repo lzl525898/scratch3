@@ -28,6 +28,8 @@ class SpriteLibrary extends React.PureComponent {
         clearInterval(this.intervalId);
     }
     handleItemSelect (item) {
+        console.log('-------------------------------------------------------------');
+        console.log(item);
         this.props.vm.addSprite2(JSON.stringify(item.json));
     }
     handleMouseEnter (item) {
@@ -35,6 +37,7 @@ class SpriteLibrary extends React.PureComponent {
         this.setState({activeSprite: item}, this.startRotatingCostumes);
     }
     handleMouseLeave () {
+        console.log('handleMouseLeave');
         this.stopRotatingCostumes();
     }
     startRotatingCostumes () {
@@ -46,6 +49,7 @@ class SpriteLibrary extends React.PureComponent {
         this.intervalId = clearInterval(this.intervalId);
     }
     rotateCostume () {
+        console.log('rotateCostume');
         const costumes = this.state.activeSprite.json.costumes;
         const nextCostumeIndex = (this.state.costumeIndex + 1) % costumes.length;
         this.setState({
